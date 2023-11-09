@@ -1,0 +1,33 @@
+header.header 
+    .top__menu-block 
+        .logo__block
+            img(class='logo__image' src='@img/main/logo.svg')
+            .flag__block 
+                img(class='logo__flag' src='@img/main/Flag_of_Belgium.svg')
+        ul.top__menu-list 
+            - var links = ['Wholesale', 'Recipes', 'Blog', 'FAQ']
+            each item, index in links
+                if(index == 0)
+                    li.menu__item.item__active
+                        a.menu__link= item
+                else              
+                    li.menu__item
+                        a.menu__link= item
+    .bottom__menu-block 
+        .left__block-for-logo 
+        .right__block-content 
+            .bottom__menu
+                ul.bottom__menu-list 
+                    - var links = ['belgian pearl sugar', 'liege waffle mix', 'liege waffle maker', 'speciality ingredients']
+                        each item, index in links
+                            li.bottom__menu-item
+                                a.bottom__menu-link= item
+            .bottom__search-block 
+                img(src='@img/main/search.svg')
+                input.search__input(type="text" placeholder='Search')
+            .bottom__bucket
+                img(src="@img/main/bucket.svg", alt="bucket") 
+            .bottom__sign-in
+                img(src="@img/main/sign_in_image.svg", alt="sign_in")
+                a(href="#").sign-in__text Sign in
+        

@@ -1,0 +1,11 @@
+@import 'fonts.scss';
+@import 'reset.scss';
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: clip;
+}
+@import 'blocks/header.scss';
+
