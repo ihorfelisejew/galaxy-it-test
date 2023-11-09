@@ -276,6 +276,7 @@ body {
   margin-bottom: 33px;
 }
 .main .main__content-block .main__content .main__button {
+  cursor: pointer;
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -285,6 +286,10 @@ body {
   border-radius: 5px;
   margin-bottom: 134px;
   align-items: center;
+  transition: all 0.5s ease 0s;
+}
+.main .main__content-block .main__content .main__button:hover {
+  background-color: #d4a929;
 }
 .main .main__content-block .main__content .main__button .main__button-text {
   color: #FFF;
