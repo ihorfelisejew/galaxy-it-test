@@ -32,6 +32,19 @@
                 z-index: 0;
                 width: 59.18px;
                 height: 39.557px;
+                border-radius: 3px;
+                position: relative;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -10px;
+                    width: 100%;
+                    height: 10px;
+                    transform: rotate(-10deg);
+                    background-color: #fff;
+                    z-index: 1;
+                }
             }
         }
 
@@ -137,7 +150,7 @@
                 flex-direction: row;
                 align-items: center;
                 gap: 9px;
-                margin-right: 145px;
+                margin-right: 120px;
                 .sign-in__text{
                     color: #7E7E7E;
                     font-family: 'Dupla', sans-serif;

@@ -1,0 +1,21 @@
+main.main
+    .main__image-block 
+        img(src="@img/main/waffles.svg", alt="waffles")
+    .main__content-block 
+        .main__content 
+            h1.main__title PEARL SUGAR
+            p.main__text But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound.
+            button.main__button 
+                p.main__button-text Shop now
+                img(src="@img/main/arrow_for_shop_now.svg", alt="arrow").main__button_image
+            .main__pagination
+                - var n = 0;
+                while n < 4
+                    if n === 0
+                        .pagination__item.pagination__active
+                    else 
+                        .pagination__item
+                    - n++;
+        .main__content-image 
+            img(src="@img/main/pearl_sugar.svg", alt="pearl_sugar")
+
