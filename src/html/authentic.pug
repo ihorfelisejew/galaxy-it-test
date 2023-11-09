@@ -1,0 +1,30 @@
+section.page__authentic-recipes.authentic 
+    img(src="@img/authentic/Flag_of_Belgium.svg", alt="Flag").authentic__flag
+    .authentic__container 
+        .authentic__titles 
+            h2.authentic__title Authentic <span>recipes</span>
+            p.authentic__title-text Try one of our pearl sugar recipe at the comfort of your home. In the kitchen with waffle pantry.
+        .authentic__items 
+            - var i = 0;
+            while i < 3
+                .authentic__item 
+                    .authentic__item-image 
+                        img(src="@img/authentic/item_"+(i+1)+".svg", alt="")
+                    .authentic__item-texts 
+                        .authentic__stars
+                            - var s = 0;
+                            while s < 5
+                                img(src="@img/products/product_star.svg", alt="Star")
+                                - s++;
+                        h3.authentic__item-title traditional liege waffle
+                        .authentic__time 
+                            img(src="@img/authentic/time.svg", alt="time")
+                            p.time__text 45 min
+                        .authentic__description Try one of our pearl sugar recipe at the comfort of your home. In the kitchen with waffle pantry.
+                -i++;
+        .authentic__more 
+            .more__items
+                p.more__title discover more recipes
+                img(src="@img/authentic/arrow.svg", alt="arrow")
+            .more__circle 
+                

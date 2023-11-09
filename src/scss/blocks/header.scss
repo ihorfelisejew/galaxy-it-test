@@ -34,17 +34,7 @@
                 height: 39.557px;
                 border-radius: 3px;
                 position: relative;
-                &::after{
-                    content: '';
-                    position: absolute;
-                    left: 0;
-                    bottom: -10px;
-                    width: 100%;
-                    height: 10px;
-                    transform: rotate(-10deg);
-                    background-color: #fff;
-                    z-index: 1;
-                }
+                clip-path: polygon(0 0, 100% 0, 100% calc(100% - 13px), 0 100%);
             }
         }
 
