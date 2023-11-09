@@ -1,9 +1,11 @@
 html(lang="en")
     head
         link(rel="stylesheet" href='css/style.min.css')
-
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css")
     body 
         .wrapper
             include html/header.pug
             include html/main.pug
+            include html/products.pug
+        script(src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js")
         script(src='js/app.min.js')

@@ -1,11 +1,25 @@
-console.log("Hello!")
+import Swiper from 'swiper';
 
-//імпорт файлів використовуючи ES6
-import * as flsFunctions from "./modules/functions.js";
+new Swiper('.products__slider', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    slidesPerView:4,
+    slidesPerGroup:1,
+    spaceBetween: 45,
+});
 
-flsFunctions.isWebp();
-
-//підключення плагінів використовуючи ES6
-import Swiper, { Navigation, Pagination } from 'swiper';
-
-const swiper = new Swiper();
+const productsMenuItems = document.querySelectorAll('.products__menu_item');
+productsMenuItems.forEach((item, index1) => {
+    item.addEventListener('click', () =>{
+        productsMenuItems.forEach((item2, index2) => {
+            if(!item2.classList.contains('.not__active') && index1 == index2){
+                item2.classList.add('not__active');
+            }
+            else{
+                item2.classList.remove('not__active');
+            }
+        })
+    })
+})

@@ -5,6 +5,7 @@
     width: 100%;
     z-index: -10;
     align-items: center;
+    padding-bottom: 35px;
     .main__image-block {
         z-index: 1;
         img{
@@ -26,9 +27,7 @@
 
             .main__title{
                 color: #676767;
-                font-family: 'Dupla', sans-serif;
                 font-size: 96px;
-                font-style: normal;
                 font-weight: 700;
                 line-height: 100%;
                 width: 320px;
@@ -36,10 +35,7 @@
             }
             .main__text{
                 color: #676767;
-                font-family: 'Dupla', sans-serif;
                 font-size: 18px;
-                font-style: normal;
-                line-height: 150%;
                 width: 500px;
                 margin-bottom: 33px;
             }
@@ -52,14 +48,11 @@
                 background-color: #F4C22F;
                 border-radius: 5px;
                 margin-bottom: 134px;
+                align-items: center;
 
                 .main__button-text {
                     color: #FFF;
-                    font-family: 'Dupla', sans-serif;
-                    font-size: 16px;
-                    font-style: normal;
                     font-weight: 700;
-                    line-height: 150%; /* 24px */
                     text-transform: uppercase;
                 }
             }
